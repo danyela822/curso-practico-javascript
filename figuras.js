@@ -112,3 +112,41 @@ function calcularAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
+
+function calcularPerimetroTriangulo(){
+    const input1 = document.getElementById("InputTriangulo1");
+    const value1 = Number(input1.value);
+
+    const input2 = document.getElementById("InputTriangulo2");
+    const value2 = Number(input2.value);
+
+    const input3 = document.getElementById("InputTriangulo3");
+    const value3 = Number(input3.value);
+
+    const perimetro = perimetroTriangulo(value1,value2,value3);
+    alert(perimetro);
+}
+
+function calcularAreaTriangulo(){
+    const input3 = document.getElementById("InputTriangulo3");
+    const value3 = input3.value
+    const input4 = document.getElementById("InputTriangulo4");
+    const value4 = input4.value
+
+    const area = areatriangulo(value3,value4);
+    alert(area);
+}
+
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const value = input.value
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const value = input.value
+    const area = areaCirculo(value);
+    alert(area);
+}
