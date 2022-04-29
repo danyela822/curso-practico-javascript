@@ -125,6 +125,8 @@ function calcularPerimetroTriangulo(){
 
     const perimetro = perimetroTriangulo(value1,value2,value3);
     alert(perimetro);
+    
+    alert(alturaIsosceles(value1,value2,value3));
 }
 
 function calcularAreaTriangulo(){
@@ -149,4 +151,28 @@ function calcularAreaCirculo(){
     const value = input.value
     const area = areaCirculo(value);
     alert(area);
+}
+
+function isIsosceles(lado1, lado2, lado3) {
+    if(lado1 === lado2 && lado1 !== lado3){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+function alturaIsosceles(lado1, lado2, base){
+
+    if(lado1 === lado2 && lado1 !== base){
+
+        let hipotenusa = lado1*lado1;
+        let cateto = (base*base)/4;
+        let altura = Math.sqrt(hipotenusa-cateto);
+
+        return "La altura del triangulo es: "+altura
+    }
+    else{
+        return "No es un triangulo isosceles";
+    }
 }
