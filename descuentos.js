@@ -10,3 +10,10 @@ console.log({
     porcentajePrecioDescuento,
     precioDescuento,
 });
+
+function calcularPrecioDescuento(precio,descuento){
+    const porcentajePrecioDescuento = 100 - descuento;
+    const precioDescuento = (precio * porcentajePrecioDescuento)/100;
+
+    return precioDescuento;
+}
